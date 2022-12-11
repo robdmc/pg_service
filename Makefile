@@ -13,12 +13,3 @@ up: ## Open a shell in the container.  Can run ipython from here
 
 down: ## Run failing ibis scenario
 	-docker-compose down
-
-# clean: ## clean out images you built
-# 	docker-compose down
-# 	-docker images | grep 'ibis_test_base' | awk '{print $3}'  | xargs docker rmi
-# 	-docker images | grep 'ibis_pg' | awk '{print $3}'  | xargs docker rmi
-# 	-docker builder prune -f
-
-
-
